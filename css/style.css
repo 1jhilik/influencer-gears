@@ -10,15 +10,40 @@ body {
 
 .container {
     display: flex;
-    margin: 100px;
+    margin-left: 100px;
+    margin-top: 0;
 
 }
 .influencer>h1{
     font-size: 52px;
     color: #3A3A3A;
-    padding-top: 100px;
+    padding-top: 0;
 }
 
+@keyframes sliding {
+    0% {
+        color: rgb(153, 255, 133);
+        left: 100px;
+    }
+
+    50% {
+        color: black;
+        left: 25px;
+    }
+
+    100% {
+        color: rgb(255, 95, 95);
+        right: 0;
+        top: 0;
+    }
+
+}
+  .header{
+    position: relative;
+    animation: sliding 2s ease-in 1s infinite;       
+    animation-play-state: stripes;
+    
+}
 .anchor{
     text-align: none;
     text-decoration: none;
@@ -35,7 +60,8 @@ body {
 .camera img{
     width: 440px;
     height: 414px;
-    padding-top: 90px;
+    margin-top: 0;
+    padding-top: 0;
     padding-left: 120px;   
 }
 .popular-Container{
